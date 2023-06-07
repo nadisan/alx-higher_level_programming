@@ -16,25 +16,22 @@ listint_t *insert_node(listint_t **head, int number)
 	if (newlist == NULL)
 		return (NULL);
 	newlist->n = number;
-	if (*head == NULL || old->n > newlist->n)
+	if (*head == NULL || old->n >= newlist->n)
 	{
 		newlist->next = old;
 		*head = newlist;
 		return (newlist);
 	}
-	while (old)
+	while (old->next)
 	{
-		if (old->n == newlist->n)
-		{	free(newlist);
-			return (NULL);
-		}
-		else if (old->next->n > newlist->n)
+		if (old->next->n >= newlist->n)
 		{	newlist->next = old->next;
 			old->next = newlist;
 			return (newlist);
 		}
 		old = old->next;
 	}
-	free(newlist);
-	return (NULL);
+	newlist->next = NULL;
+	old->next = newlist;
+	return (newlist);
 }
