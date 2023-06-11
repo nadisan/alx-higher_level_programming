@@ -16,4 +16,4 @@ if len(sys.argv) >= 2:
             print("{}: {}".format(i, sys.argv[i]))
             i += 1
 else:
-    print("0 argument.")
+    print("0 arguments.")
