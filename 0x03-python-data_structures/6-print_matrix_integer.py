@@ -10,7 +10,7 @@ def print_matrix_integer(matrix=[[]]):
         while (j < (len(row))):
             print("{:d}".format(row[j]), end=" ")
             j += 1
-        print()
+        print("".format())
         j = 0
 
 
