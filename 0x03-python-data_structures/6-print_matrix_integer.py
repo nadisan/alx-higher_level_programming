@@ -4,7 +4,6 @@ def print_matrix_integer(matrix=[[]]):
     i = 0
     j = 0
 
-    
     for i in range(len(matrix)):
         row = matrix[i]
         while (j < (len(row))):
@@ -12,5 +11,3 @@ def print_matrix_integer(matrix=[[]]):
             j += 1
         print("".format())
         j = 0
-
-
