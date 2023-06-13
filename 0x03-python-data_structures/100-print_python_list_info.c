@@ -19,5 +19,5 @@ void print_python_list_info(PyObject *p)
 	{
 		printf("Element %d: %s\n", i, pp->ob_item[i]->ob_type->tp_name);
 		i++;
-	}		
+	}
 }
