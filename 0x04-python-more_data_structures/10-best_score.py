@@ -1,5 +1,5 @@
 def best_score(a_dictionary):
-    best ="None"
+    best = "None"
     H = 0
     if (a_dictionary):
         for k in a_dictionary:
