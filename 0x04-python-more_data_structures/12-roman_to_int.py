@@ -16,18 +16,18 @@ def roman_to_int(roman_string):
         elif (k == "X" and (x == 0)):
             num += (10)
         x = num % 50
-        if (k == "L" and(x == 0)):
+        if (k == "L" and (x == 0)):
             num += (50)
-        elif (k == "L" and(x != 0)):
-            num += (50 - 2*x)
+        elif (k == "L" and (x != 0)):
+            num += (50 - 2 * x)
         x = num % 100
         if (k == "C" and (x == 0)):
             num += (100)
-        elif (k == "C" and(x != 0)):
-            num += (100 - 2*x)
+        elif (k == "C" and (x != 0)):
+            num += (100 - 2 * x)
         x = num % 500
-        if (k == "D" and(x == 0)):
+        if (k == "D" and (x == 0)):
             num += (500)
-        elif (k == "D" and(x != 0)):
-            num += (500 - 2*x)
+        elif (k == "D" and (x != 0)):
+            num += (500 - 2 * x)
     return num
