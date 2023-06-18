@@ -2,6 +2,8 @@
 
 def roman_to_int(roman_string):
     num = 0
+    if (roman_string == "None"):
+        return (0)
     for k in roman_string:
         if k == "I":
             num += (1)
