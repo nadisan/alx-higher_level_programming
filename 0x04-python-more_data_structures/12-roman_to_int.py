@@ -5,13 +5,13 @@ def roman_to_int(roman_string):
     for k in roman_string:
         if k == "I":
             num += (1)
-        if (k == "V" and (num == 0 or num > 5)):
+        if (k == "V" and (num == 0 or num >= 5)):
             num += 5
         if (k == "V" and num < 5):
             num = 5 - num
         if (k == "X" and (num > 0 and num < 10)):
             num = 10 - num
-        if (k == "X" and (num == 0 or num > 10)):
+        if (k == "X" and (num == 0 or num >= 10)):
             num += (10)
         if k == "L":
             num += (50)
