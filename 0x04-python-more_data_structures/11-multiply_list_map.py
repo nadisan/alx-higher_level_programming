@@ -5,4 +5,4 @@ def multiply_list_map(my_list=[], number=0):
         return n * number
 
     # Multiply all numbers by number
-    return (map(mul, my_list))
+    return (list(map(mul, my_list)))
