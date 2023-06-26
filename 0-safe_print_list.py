@@ -5,7 +5,6 @@ def safe_print_list(my_list=[], x=0):
         x = len(my_list)
     for i in range(x):
         if (my_list[i]):
-            print("{:}".format(my_list[i]))
-        else:
-            break
+            print("{:}".format(my_list[i]), end="")
+    print(end="\n")
     return (x)
