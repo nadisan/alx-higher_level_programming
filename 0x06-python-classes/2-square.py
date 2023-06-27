@@ -1,9 +1,19 @@
 #!/usr/bin/python3
 """Defines a class square """
 class Square():
-    """square class"""
+    """
+    Class that defines properties of square by: based on 1-square
+    
+    Attributes:
+        size: size of a square (1 side).
+    """
     def __init__(self, size=0):
-        """init"""
+        """
+        Creates new instances of square.
+        
+        Args:
+            size: size of the square (1 side).
+        """
         if type(size) is not int:
             raise ValueError("size must be >= 0")
         elif size < 0:
