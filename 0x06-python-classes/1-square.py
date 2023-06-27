@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""Define Square class with private instance attribute size"""
+"""Define a class Square"""
 
 class Square():
-     """
+    """
     Class that defines properties of square by: (based on 0-square.py).
 
     Attributes:
