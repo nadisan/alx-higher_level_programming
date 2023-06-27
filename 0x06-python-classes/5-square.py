@@ -48,7 +48,10 @@ class Square():
             self.__size = value
 
     def my_print(self):
-        for i in range (self.__size):
-            for i in range (self.__size):
+        """
+        prints in stdout the square area with the character #
+        """
+        for i in range(self.__size):
+            for i in range(self.__size):
                 print("#", end="")
             print()
