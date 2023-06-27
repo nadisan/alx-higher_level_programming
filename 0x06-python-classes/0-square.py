@@ -2,5 +2,5 @@
 
 
 class Square:
-    """An empty block"""
+    """empty class"""
     pass
