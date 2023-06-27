@@ -16,6 +16,7 @@ class Square():
         Args:
             size: size of the square (1 side).
         """
+        self.__size = size
         if type(size) is not int:
             raise ValueError("size must be >= 0")
         elif size < 0:
