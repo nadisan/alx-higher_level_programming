@@ -69,8 +69,8 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
         elif (value[0] < 0 or value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
-        x = value[0]
-        y = value[1]
+        else:
+            self.__position = position
 
     def my_print(self):
         """
