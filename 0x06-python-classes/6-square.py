@@ -77,7 +77,7 @@ class Square():
         prints in stdout the square area with the character #
         """
         (x, y) = self.__position
-        if self.__size == 0 and (x, y) == (0, 0):
+        if self.__size == 0:
             print()
             return
         for i in range(y + self.__size):
