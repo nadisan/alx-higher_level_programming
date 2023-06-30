@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Defines a function add_integer(a, b=98)"""
+"""
+Defines a function add_integer(a, b=98)
+"""
+
 
 def add_integer(a, b=98):
     """
