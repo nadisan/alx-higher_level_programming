@@ -7,7 +7,7 @@ Defines a function add_integer(a, b=98)
 def add_integer(a, b=98):
     """
     Defines a function that takes and adds two integers
-    
+
     args:
         int a: must be integer
         int b: must be integer, assigned value 98 at fun def
@@ -19,6 +19,3 @@ def add_integer(a, b=98):
         if (type(b) is not int):
             raise TypeError("b must be an integer")
     return int(a + b)
-
-
-
