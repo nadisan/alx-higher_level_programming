@@ -4,6 +4,7 @@
 	>>> print_square(2)
 	##
 	##
+	>>> print_square(0)
 	>>> print_square(None)
 	Traceback (most recent call last):
         ...
