@@ -7,7 +7,6 @@ class Rectangle():
     Defines defines a rectangle by width and height:
     (based on 0-rectangle.py)
     """
-
     def __init__(self, width=0, height=0):
         """
         Creates new instance of a square.
