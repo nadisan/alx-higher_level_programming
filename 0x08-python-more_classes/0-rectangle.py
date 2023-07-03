@@ -4,4 +4,4 @@
 
 class Rectangle():
     """Defines function with no value"""
-    pass 
+    pass
