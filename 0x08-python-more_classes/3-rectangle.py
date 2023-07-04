@@ -50,8 +50,10 @@ class Rectangle:
 
     def __str__(self):
         rec = ""
-        for i in range(self.__height):
+        for i in range(self.__height - 1):
             for i in range(self.__width):
                 rec += "#"
             rec += "\n"
+        for i in range(self.__width):
+            rec += "#"
         return (rec)
