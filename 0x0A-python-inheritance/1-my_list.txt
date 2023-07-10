@@ -1,4 +1,4 @@
->>>is_same_class = __import__('2-is_same_class').is_same_class
+>>>MyList = __import__('1-my_list').MyList
 	>>>my_list = MyList()
 	>>>my_list.append(1)
 	>>>my_list.append(4)
