@@ -7,11 +7,10 @@ class MyList(list):
     pass
 
     def print_sorted(self):
-        
         """Defines a class MyList that inherits from list
-        
+
         args:
             self: list that is inherited
-        prints: sorted list"""
-        
+        prints: sorted list
+        """ 
         print(sorted(list(self)))
