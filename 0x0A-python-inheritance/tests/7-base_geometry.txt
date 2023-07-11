@@ -1,9 +1,43 @@
->>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
+# 7-base_geometry.txt
+
+=============================
+How to Use 7-base_geometry.py
+=============================
+
+This modules defines a base geometry class BaseGeometry.
+
+Instantiation
+=============
+
+``BaseGeometry`` includes no attributes, and accordingly is initialized 
+with no arguments.
+
+::
+	>>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
 	>>>bg = BaseGeometry()
-	
-	>>>bg.integer_validator("my_int", 12)
-	
-	>>>bg.integer_validator("width", -89)
+	>>>type(bg)
+	<class '7-base_geometry.BaseGeometry'>
+::
+	>>> print(bg) # doctest: +ELLIPSIS
+	<7-base_geometry.BaseGeometry object at ...>
+
+	In fact, any arguments supplied to an instantiation of "BaseGeomtry" results in a TypeError.
+
+::
+	>>>bg = BaseGeometry(None)
 	Traceback (most recent call last):
-   	ValueError: number must be greater than 0
+   	TypeError: object() takes no parameters
+
+Methods
+=======
+"BaseGeomety features two methods - "area(self)" and
+"integer_validator(self, name, value)". "area(...)" is not yet implemented
+
+::
+	>>>bg = BaseGeometry()
+	>>>print(bg.area) # doctest: +ELLIPSIS, +NORMALIZE_WHITESPACE
+	<bound method BaseGeometry.area of <7-base_geometry.BaseGeometry 
+     object at...>>
+
+	
 	
