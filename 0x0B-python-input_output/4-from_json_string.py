@@ -8,4 +8,4 @@ import json
 def from_json_string(my_str):
     """Defines the function that returns an object (Python data structure)
     represented by a JSON string:"""
-    return json.dumps(my_str)
+    return json.loads(my_str)
