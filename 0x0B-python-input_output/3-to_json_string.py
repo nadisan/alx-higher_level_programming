@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Defines the function write_file"""
 import json
 """Defines the function write_file"""
 
