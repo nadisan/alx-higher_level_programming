@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """Defines the function 7-add_item"""
-
 import os.path
 import sys
-"""Imports sys module"""
 from sys import argv
 import json
 """Imports json module"""
