@@ -83,7 +83,11 @@ class Rectangle(Base):
 
     def display(self):
         """ display area of rectangle"""
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
+            for i in range(self.__x):
+                print(" ", end="")
             for i in range(self.__width):
                 print("#", end="")
             print()
