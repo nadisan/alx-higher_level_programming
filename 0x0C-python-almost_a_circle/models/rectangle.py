@@ -129,7 +129,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ define dictionary representation of a Rectangle """
-        dic = {'x': 0, 'y': 0, 'id': 0, 'height': 0, 'width': 0}
+        dic = {'x': 0, 'width': 0, 'id': 0, 'height': 0, 'y': 0}
         for i in dic:
             if i == "x":
                 dic[i] = self.x
