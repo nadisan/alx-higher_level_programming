@@ -36,3 +36,15 @@ class Base:
 
         with open(filename, mode="w", encoding="utf-8") as a_file:
             a_file.write(cls.to_json_string(objs))
+
+    @staticmethod 
+    def from_json_string(json_string):
+        """
+        Defines a function  that returns the list of the JSON string
+        representation json_string
+        """
+        listt = []
+
+        if json_string is not None and len(json_string) != "":
+            listt = json.loads(json_string)
+        return listt
