@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """ Write the first class Base: """
 import json
-""" impots json"""
+import os.path
+import sys
+""" os , json and sys import"""
 
 
 class Base:
@@ -37,7 +39,7 @@ class Base:
         with open(filename, mode="w", encoding="utf-8") as a_file:
             a_file.write(cls.to_json_string(objs))
 
-    @staticmethod 
+    @staticmethod
     def from_json_string(json_string):
         """
         Defines a function  that returns the list of the JSON string
@@ -54,8 +56,23 @@ class Base:
         """Update the class Base by adding class
         returns an instance with all attributes already set"""
         if cls.__name__ == "Rectangle":
-            dummy = cls(1,1)
+            dummy = cls(1, 1)
         if cls.__name__ == "Square":
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """list of instance"""
+        filename = "{:s}.json".format(cls.__name__)
+        new_list = []
+
+        if os.path.exists(filename):
+            with open(filename, mode="r", encoding="utf-8") as a_file:
+                contentstr = a_file.read()
+            a_list = cls.from_json_string(contentstr)
+            for i in range(len(a_list)):
+                new_list.append(cls.create(**a_list[i]))
+
+        return (new_list)
