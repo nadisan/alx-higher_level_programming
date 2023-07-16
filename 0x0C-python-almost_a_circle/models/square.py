@@ -7,10 +7,10 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """ class Square that inherits from Rectangle  """
     def __init__(self, size, x=0, y=0, id=None):
-         """initialize instance attributes"""
-         super().__init__(size, size, x, y, id)
-         self.width = size
-         self.height = size
+        """initialize instance attributes"""
+        super().__init__(size, size, x, y, id)
+        self.width = size
+        self.height = size
 
     def __str__(self):
         """defines what string return"""
@@ -60,7 +60,7 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """ define dictionary representation of a square """
-        dic = {'id':0,'x': 0, 'size': 0, 'y':0}
+        dic = {'id': 0, 'x': 0, 'size': 0, 'y': 0}
         for i in dic:
             if i == "x":
                 dic[i] = self.x
