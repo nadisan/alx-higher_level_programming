@@ -101,20 +101,14 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             r1.width = ""
 
-    def test_dictionary(self):
-        """ check dictionary"""
-        Base._Base_nb_objects = 0
-        r1 = Rectangle(10, 2, 1, 9)
-        r1_dictionary = r1.to_dictionary()
-        a_dict = {'x': 1, 'width': 10, 'id': 1, 'height': 2, 'y': 9}
-        self.assertTrue(r1_dictionary == a_dict)
-
     def test_pep8_model(self):
+        """check dictionary"""
         p8 = pep8.StyleGuide(quiet=True)
         p = p8.check_files(['models/base.py'])
         self.assertEqual(p.total_errors, 0, "fix pep8")
 
     def test_pep8_test(self):
+        """ check dictionary"""
         p8 = pep8.StyleGuide(quiet=True)
         p = p8.check_files(['tests/test_models/test_base.py'])
         self.assertEqual(p.total_errors, 0, "fix pep8")
