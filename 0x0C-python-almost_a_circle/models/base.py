@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-""" Write the first class Base: """
+'''Module for Base class.'''
 import json
 import os.path
 import sys
-""" os , json and sys import"""
 
 
 class Base:
-    """  """
+    '''A representation of the base of our OOP hierarchy.'''
+
     __nb_objects = 0
 
     def __init__(self, id=None):
