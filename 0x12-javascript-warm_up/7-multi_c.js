@@ -2,7 +2,7 @@
 
 let n = parseInt(process.argv[2]);
 const myVar = 'C is fun';
-while (n) {
+while (n > 0) {
   console.log(myVar);
   n--;
 }
