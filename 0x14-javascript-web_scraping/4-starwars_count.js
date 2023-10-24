@@ -1,0 +1,24 @@
+#!/usr/bin/node
+
+const request = require('request');
+const starwars = process.argv[2];
+let times = 0;
+
+request(starwars, function (_error, _response, body) {
+  body = JSON.parse(body).results;
+
+  for (let i = 0; i < body.length; ++i) {
+    const characters = body[i].characters;
+    
+    for (let j = 0; j < characters.length; ++j) {
+      const character = characters[j];
+      const characterid = characters.split('/')[5];
+	
+      if (characterId === '18') {
+        times += 1;
+      }
+    }
+  }
+
+  console.log(body.times);
+});
