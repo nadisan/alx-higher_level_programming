@@ -12,7 +12,7 @@ request(starwars, function (_error, _response, body) {
     
     for (let j = 0; j < characters.length; ++j) {
       const character = characters[j];
-      const characterid = characters.split('/')[5];
+      const characterId = character.split('/')[5];
 	
       if (characterId === '18') {
         times += 1;
@@ -20,5 +20,5 @@ request(starwars, function (_error, _response, body) {
     }
   }
 
-  console.log(body.times);
+  console.log(times);
 });
