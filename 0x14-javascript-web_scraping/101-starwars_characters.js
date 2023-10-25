@@ -39,7 +39,7 @@ function printMovieCharacters (movieId) {
         })
         .catch((err) => {
           console.log(err);
-        });
+	});
     });
 }
 
