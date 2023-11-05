@@ -8,7 +8,7 @@ request(starWarsUri, function (_error, _resp, body) {
 
   for (let i = 0; i < characters.length; ++i) {
     request(characters[i], function (_cErr, _cRes, cBody) {
-    console.log(JSON.parse(cBody).name);
+      console.log(JSON.parse(cBody).name);
     });
   }
 });
